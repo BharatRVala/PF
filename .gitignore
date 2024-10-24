@@ -1,6 +1,6 @@
 #dependencies
 /portfolio/node_modules
-
+/react-router-dom
 
 # Logs
 logs
