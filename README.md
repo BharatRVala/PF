@@ -1,3 +1,11 @@
+#how to run 
+open cmd and set clone repository path
+command :- git clone https://github.com/BharatRVala/PF.git
+command :- cd pf
+command :- npm i
+command :- npm run dev
+
+
 <<<<<<< HEAD
 # PF
 =======
