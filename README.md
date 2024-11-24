@@ -1,5 +1,5 @@
 #how to run <br>
-open cmd and set clone repository path<br>
+open cmd and set clone repository path<br><br>
 command :- git clone https://github.com/BharatRVala/PF.git<br>
 command :- cd pf<br>
 command :- npm i<br>
