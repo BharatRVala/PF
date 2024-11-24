@@ -1,9 +1,9 @@
 #how to run <br>
 open cmd and set clone repository path<br>
-command :- git clone https://github.com/BharatRVala/PF.git
-command :- cd pf
-command :- npm i
-command :- npm run dev
+command :- git clone https://github.com/BharatRVala/PF.git<br>
+command :- cd pf<br>
+command :- npm i<br>
+command :- npm run dev<br>
 
 
 <<<<<<< HEAD
