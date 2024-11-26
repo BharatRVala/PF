@@ -89,7 +89,7 @@ function Home() {
 
             <div className="btnp">
               <button onClick={() => window.open('https://github.com/BharatRVala/LoginSignup-mern', '_blank')} > <img src={giti} alt="github icone" />Github</button>
-              <button onClick={() => window.open('https://login-signup-mern-pi.vercel.app/login', '_blank')}><img src={Demo} alt="Demo icon" />Demo</button>
+              <button onClick={() => window.open('https://login-signup-mern-ui1.vercel.app/Login', '_blank')}><img src={Demo} alt="Demo icon" />Demo</button>
             </div>
 
           </div>
