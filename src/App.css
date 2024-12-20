@@ -277,7 +277,7 @@ body {
 
 
 .dbox:hover {
-  background-color: #f7e150;
+  background-color: ##ffff7c;
   color: white;
   box-shadow: 0 6px 15px rgba(241, 238, 238, 0.5);
 }
