@@ -25,7 +25,7 @@ function Contact() {
     setError(null); // Reset error state on each submit
 
     try {
-      const response = await fetch('https://pfcontact.vercel.app/create', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/create`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
