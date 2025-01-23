@@ -80,31 +80,55 @@ function Home() {
       <hr />
       <div className="pro">
         <h1>My Recent Works</h1>
-        <div className='projects'>
-          <div className="project">
-            <h2>authentication system(Login-Signup-Logout)</h2>
-            <p>
-              This project is a user authentication system built using the MERN stack (MongoDB, Express, React, Node.js). It features secure signup, login, and logout functionality with password hashing (bcrypt) and JWT-based session management. Users can register, log in, and access protected pages. React handles the frontend, while Express and Node manage the backend API, and MongoDB stores user data. This project demonstrates strong skills in authentication, frontend-backend integration, and security best practices
-            </p>
+        <div className="projects">
+  <div className="projects-row">
+    <div className="project">
+      <h2>Authentication System (Login-Signup-Logout)</h2>
+      <p>
+        This project is a user authentication system built using the MERN stack (MongoDB, Express, React, Node.js). It features secure signup, login, and logout functionality with password hashing (bcrypt) and JWT-based session management. Users can register, log in, and access protected pages. React handles the frontend, while Express and Node manage the backend API, and MongoDB stores user data. This project demonstrates strong skills in authentication, frontend-backend integration, and security best practices.
+      </p>
+      <div className="btnp">
+        <button onClick={() => window.open('https://github.com/BharatRVala/LoginSignup-mern', '_blank')}>
+          <img src={giti} alt="github icon" /> Github
+        </button>
+        <button onClick={() => window.open('https://login-signup-mern-ui1.vercel.app/Login', '_blank')}>
+          <img src={Demo} alt="Demo icon" /> Demo
+        </button>
+      </div>
+    </div>
+    <div className="project">
+      <h2>Jokes Platform</h2>
+      <p>
+      Built a modern, server-side rendered web application using Next.js for seamless performance and dynamic routing. Integrated features such as user authentication, joke creation, likes, profile management, and account deletion using the MERN stack (MongoDB, Express, React, Node.js). Leveraged Next.js's optimized server-side rendering and API routes to deliver a highly responsive and interactive user experience with dynamic UI elements and smooth navigation. 
+      </p>
+      <div className="btnp">
+        <button onClick={() => window.open('https://github.com/BharatRVala/Jokes', '_blank')}>
+          <img src={giti} alt="github icon" /> Github
+        </button>
+        <button onClick={() => window.open('https://jokes-dun.vercel.app/', '_blank')}>
+          <img src={Demo} alt="Demo icon" /> Demo
+        </button>
+      </div>
+    </div>
+  </div>
+  <div className="projects-row">
+    <div className="project centered">
+      <h2>Employee Management System</h2>
+      <p>
+        Built a full-stack application using the MERN Stack (MongoDB, Express, React, Node.js) featuring an Employee Dashboard for profile and task management, an Admin Dashboard for managing employee details and assignments, and a task tracking system. Utilized local storage for session management and optimized user experience with role-based access control and RESTful API integration.
+      </p>
+      <div className="btnp">
+        <button onClick={() => window.open('https://github.com/BharatRVala/employee-management-system', '_blank')}>
+          <img src={giti} alt="github icon" /> Github
+        </button>
+        <button onClick={() => window.open('https://employee-management-system-smoky-gamma.vercel.app/', '_blank')}>
+          <img src={Demo} alt="Demo icon" /> Demo
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
-            <div className="btnp">
-              <button onClick={() => window.open('https://github.com/BharatRVala/LoginSignup-mern', '_blank')} > <img src={giti} alt="github icone" />Github</button>
-              <button onClick={() => window.open('https://login-signup-mern-ui1.vercel.app/Login', '_blank')}><img src={Demo} alt="Demo icon" />Demo</button>
-            </div>
-
-          </div>
-          <div className="project">
-            <h2>employee management system</h2>
-            <p>
-              Built a full-stack application using the MERN Stack (MongoDB, Express, React, Node.js) featuring an Employee Dashboard for profile and task management, an Admin Dashboard for managing employee details and assignments, and a task tracking system. Utilized local storage for session management and optimized user experience with role-based access control and RESTful API integration.</p>
-           <br /> <br /><br /><br />
-            <div className="btnp">
-              <button onClick={() => window.open('https://github.com/BharatRVala/employee-management-system', '_blank')}><img src={giti} alt="github icone" />Github</button>
-              <button onClick={() => window.open('https://employee-management-system-smoky-gamma.vercel.app/', '_blank')}><img src={Demo} alt="Demo icon" />Demo</button>
-            </div>
-          </div>
-
-        </div>
       </div>
     </div>
   );

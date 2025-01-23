@@ -551,17 +551,25 @@ width: 40%;
 }
 .projects{
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.project{
+.projects-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.project {
+  width: 40%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+.centered {
   width: 50%;
-  background-color: gray;
-  margin: auto;
-  margin: 30px 10px;
-  border-radius: 10px;
-
 }
-
 .project:hover{
   box-shadow: 0 1px 5px rgba(255, 255, 255, 0.9);;
   
@@ -572,10 +580,7 @@ width: 40%;
     display: block;
     
   }
-  .project{
-    width: 90%;
-    
-  }
+  
 
   .intro{
     display: block;
@@ -622,9 +627,9 @@ width: 40%;
   border-radius: 10px;
   margin-bottom: 10px;
   
-  
+  margin: 0.5rem;
   border: none;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   background-color: green;
   
