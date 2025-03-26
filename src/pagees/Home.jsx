@@ -7,33 +7,33 @@ import Type from '../components/Type';
 const projects = [
   {
     title: "Authentication System (Login-Signup-Logout)",
-    description: "A MERN authentication system with JWT, password hashing, and session management A MERN authentication system with JWT, password hashing, and session management A MERN authentication system with JWT, password hashing, and session management.",
+    description: "This project is a secure user authentication system built with the MERN stack (MongoDB, Express, React, and Node.js). It allows users to register, log in, and log out with JWT-based authentication. The system includes password hashing for security, error handling, and session management. It also features user-friendly UI with form validation and real-time feedback.",
     githubLink: "https://github.com/BharatRVala/LoginSignup-mern",
     demoLink: "https://login-signup-mern-pi.vercel.app/login"
   },
   {
-    title: "Authentication System (Login-Signup-Logout)",
-    description: "A MERN authentication system with JWT, password hashing, and session management.",
-    githubLink: "https://github.com/BharatRVala/LoginSignup-mern",
-    demoLink: "https://login-signup-mern-pi.vercel.app/login"
+    title: "Jokes Platform",
+    description: "The Jokes Platform is an interactive web application where users can create an account, post jokes, and engage with content by liking or disliking jokes. Users have full control over their content, allowing them to edit or delete their jokes and even update their account details. The platform categorizes jokes into different sections, including Most Popular, Latest, Oldest, and My Jokes, making it easy for users to explore trending and newly posted jokes. The system ensures a smooth user experience with authentication, joke publishing, and real-time updates.",
+    githubLink: "https://github.com/BharatRVala/Jokes.git",
+    demoLink: "https://jokes-dun.vercel.app/"
   },
   {
-    title: "Employee Management System",
-    description: "A full-stack MERN app with an employee dashboard, admin panel, and task management.",
-    githubLink: "https://github.com/BharatRVala/employee-management-system",
-    demoLink: "https://employee-management-system-smoky-gamma.vercel.app/"
+    title: "Photoshop UI Design Hub – Creative Editing & Design Services",
+    description: "A modern and user-friendly Photoshop UI website designed using Elementor Pro and essential plugins. This platform showcases high-quality photo editing, graphic design, and UI/UX customization services with an intuitive interface. Built for seamless navigation and a visually engaging experience, it provides real-time previews, service booking options, and an interactive portfolio of creative designs.",
+    githubLink: "https://github.com/BharatRVala",
+    demoLink: "https://bharat.infy.uk"
   },
   {
-    title: "Portfolio Website",
-    description: "A personal portfolio built using React and Tailwind CSS showcasing projects and skills.",
-    githubLink: "https://github.com/BharatRVala/ReactPF",
-    demoLink: "https://bharatvala.vercel.app/"
+    title: "Restaurant UI",
+    description: "A beautifully designed restaurant UI website featuring a modern and interactive user experience. Built with Elementor Pro and essential plugins, this platform offers a seamless menu browsing, table reservations, and customer engagement system. Users can register, log in, and contact the restaurant for inquiries or bookings. The intuitive Contact Us section ensures easy communication, while the responsive design provides a smooth experience across all devices.",
+    githubLink: "https://github.com/BharatRVala/",
+    demoLink: "https://kababmahal.com/"
   },
   {
-    title: "Kabab Mahal",
-    description: "A restaurant website built with React and Tailwind CSS.",
-    githubLink: "https://github.com/BharatRVala/KababMahal",
-    demoLink: "https://kababmahal.vercel.app/"
+    title: "My Portfolio – Showcasing Skills & Projects",
+    description: "A personal portfolio website designed to showcase skills, projects, and experiences in a professional and visually appealing manner. Built using Elementor Pro and essential plugins, this website highlights expertise in full-stack development, WordPress, and UI/UX design. It includes sections for About Me, Skills, Projects, Contact, and Resume Download, ensuring easy navigation for visitors. Fully responsive and optimized for performance, this portfolio serves as a digital identity to attract potential clients and employers.",
+    githubLink: "https://github.com/BharatRVala/PF.git",
+    demoLink: "https://portfolio-bharatvala.vercel.app/"
   },
 ];
 
