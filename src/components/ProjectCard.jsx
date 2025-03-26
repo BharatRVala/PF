@@ -1,7 +1,7 @@
 import React from 'react';
 
-const githubIcon = "/github.png";
-const demoIcon = "/Demo.png";
+import githubIcon from "../assets/github.png";
+import demoIcon from "../assets/Demo.png";
 
 
 const ProjectCard = ({ title, description, githubLink, demoLink }) => {
