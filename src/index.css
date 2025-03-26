@@ -1,0 +1,9 @@
+@import "tailwindcss";
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('./assets/bg.jpg'); /* Make sure the path is correct */
+  background-size: cover; /* Adjusts the image to cover the entire background */
+  background-position: center; /* Centers the background image */
+  height: 100vh;
+}

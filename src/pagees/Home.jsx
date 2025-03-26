@@ -1,134 +1,105 @@
 import React from 'react';
-import '../App.css';
+import ProjectCard from '../components/ProjectCard';
 import deviImage from '../assets/devi.png';
 import myself from '../assets/myself.png';
-import giti from '../assets/Github.png';
-import Demo from '../assets/Demo.png';
 import Type from '../components/Type';
 
+const projects = [
+  {
+    title: "Authentication System (Login-Signup-Logout)",
+    description: "A MERN authentication system with JWT, password hashing, and session management A MERN authentication system with JWT, password hashing, and session management A MERN authentication system with JWT, password hashing, and session management.",
+    githubLink: "https://github.com/BharatRVala/LoginSignup-mern",
+    demoLink: "https://login-signup-mern-pi.vercel.app/login"
+  },
+  {
+    title: "Authentication System (Login-Signup-Logout)",
+    description: "A MERN authentication system with JWT, password hashing, and session management.",
+    githubLink: "https://github.com/BharatRVala/LoginSignup-mern",
+    demoLink: "https://login-signup-mern-pi.vercel.app/login"
+  },
+  {
+    title: "Employee Management System",
+    description: "A full-stack MERN app with an employee dashboard, admin panel, and task management.",
+    githubLink: "https://github.com/BharatRVala/employee-management-system",
+    demoLink: "https://employee-management-system-smoky-gamma.vercel.app/"
+  },
+  {
+    title: "Portfolio Website",
+    description: "A personal portfolio built using React and Tailwind CSS showcasing projects and skills.",
+    githubLink: "https://github.com/BharatRVala/ReactPF",
+    demoLink: "https://bharatvala.vercel.app/"
+  },
+  {
+    title: "Kabab Mahal",
+    description: "A restaurant website built with React and Tailwind CSS.",
+    githubLink: "https://github.com/BharatRVala/KababMahal",
+    demoLink: "https://kababmahal.vercel.app/"
+  },
+];
+
 function Home() {
-
-
-
   return (
-    <div className="container">
-      <h1 className="home-title">Home</h1>
-      <hr />
-      <div className="intro">
-        <div className='intron'>
-          <h1>Hi There! <span className='heand'>👋🏻</span></h1>
-
-          <h2 className="heading-name">
-            I'M
-            <strong className="main-name"> BHARAT VALA</strong>
+    <div className="max-w-6xl mx-auto my-5 p-5 bg-[rgba(90,89,85,0.35)] rounded-xl shadow-2xl backdrop-blur-md">
+      <h1 className="text-5xl text-center text-gray-200 mb-5 animate-bounceIn hover:scale-110 transition-all">Home</h1>
+      <hr className="border-gray-600 my-4" />
+      
+      {/* Introduction Section */}
+      <div className="intro md:flex">
+        <div className='intron md:w-3/5'>
+          <h1 className="text-4xl my-10 mx-20">Hi There! <span className="inline-block animate-wave">👋🏻</span></h1>
+          <h2 className="text-4xl">
+            I'M <strong className="text-yellow-400 hover:text-green-600 transition-all">BHARAT VALA</strong>
           </h2>
-          <h3 className='typec'>
+          <h3 className='text-purple-400 text-3xl m-8'>
             <Type />
           </h3>
-
         </div>
-        <img className='devim' src={deviImage} alt="Devi" />
+        <img className='devim w-2/5 transition-all hover:scale-105' src={deviImage} alt="Devi" />
       </div>
-      <hr />
-      <div className="myself">
-        <div className="myselfim">
-          <div className="myi">
-            <img src={myself} className='mys' alt="" />
-          </div>
-
+      
+      <hr className="border-gray-600 my-4" />
+      
+      {/* About Me Section */}
+      <div className="myself md:flex">
+        <div className="myselfim md:w-2/5 flex justify-center items-center">
+          <img src={myself} className='w-2/5 transition-all hover:scale-110' alt="Myself" />
         </div>
-        <div className="text">
-          <h1 style={{ fontSize: "2.1em" }}>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LET ME <span className="purple"> INTRODUCE </span> MYSELF
+        
+        <div className="text md:w-3/5 p-4">
+          <h1 className="text-4xl mb-6">
+            LET ME <span className="text-yellow-400"> INTRODUCE </span> MYSELF
           </h1>
-          <p className="home-about-body">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I fell in love with programming and I have at least learnt
-            something, I think… 🤷‍♂️
-            <br />
-            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am fluent in classics like
-            <i>
-              <b className="purple"> HTML, Css, Javascript, React and Node. </b>
-            </i>
-            <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My field of Interest's are building new &nbsp;
-            <i>
-              <b className="purple">Web Technologies and Products </b> and
-              also in areas related to{" "}
-              <b className="purple">
-                Blockchain.
-              </b>
-            </i>
-            <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Whenever possible, I also apply my passion for developing products
-            with <b className="purple">Node.js</b> and
-            <i>
-              <b className="purple">
-                {" "}
-                Modern Javascript Library and Frameworks
-              </b>
-            </i>
-            &nbsp; like
-            <i>
-              <b className="purple"> React.js and Next.js</b>
-            </i>
+          <p className="text-xl text-left">
+            I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️
+            <br /><br />
+            I am fluent in classics like
+            <b className="text-yellow-400"> HTML, CSS, JavaScript, React, and Node.js.</b>
+            <br /><br />
+            My field of interest includes building <b className="text-yellow-400">Web Technologies and Products</b>.
+            <br /><br />
+            I love developing products using <b className="text-yellow-400">Node.js</b> and frameworks like
+            <b className="text-yellow-400"> React.js and Next.js.</b>
           </p>
         </div>
-
       </div>
-      <hr />
-      <div className="pro">
-        <h1>My Recent Works</h1>
-        <div className="projects">
-  <div className="projects-row">
-    <div className="project">
-      <h2>Authentication System (Login-Signup-Logout)</h2>
-      <p>
-        This project is a user authentication system built using the MERN stack (MongoDB, Express, React, Node.js). It features secure signup, login, and logout functionality with password hashing (bcrypt) and JWT-based session management. Users can register, log in, and access protected pages. React handles the frontend, while Express and Node manage the backend API, and MongoDB stores user data. This project demonstrates strong skills in authentication, frontend-backend integration, and security best practices.
-      </p>
-      <div className="btnp">
-        <button onClick={() => window.open('https://github.com/BharatRVala/LoginSignup-mern', '_blank')}>
-          <img src={giti} alt="github icon" /> Github
-        </button>
-        <button onClick={() => window.open('https://login-signup-mern-ui1.vercel.app/Login', '_blank')}>
-          <img src={Demo} alt="Demo icon" /> Demo
-        </button>
-      </div>
-    </div>
-    <div className="project">
-      <h2>Jokes Platform</h2>
-      <p>
-      Built a modern, server-side rendered web application using Next.js for seamless performance and dynamic routing. Integrated features such as user authentication, joke creation, likes, profile management, and account deletion using the MERN stack (MongoDB, Express, React, Node.js). Leveraged Next.js's optimized server-side rendering and API routes to deliver a highly responsive and interactive user experience with dynamic UI elements and smooth navigation. 
-      </p>
-      <div className="btnp">
-        <button onClick={() => window.open('https://github.com/BharatRVala/Jokes', '_blank')}>
-          <img src={giti} alt="github icon" /> Github
-        </button>
-        <button onClick={() => window.open('https://jokes-dun.vercel.app/', '_blank')}>
-          <img src={Demo} alt="Demo icon" /> Demo
-        </button>
-      </div>
-    </div>
-  </div>
-  <div className="projects-row">
-    <div className="project centered">
-      <h2>Employee Management System</h2>
-      <p>
-        Built a full-stack application using the MERN Stack (MongoDB, Express, React, Node.js) featuring an Employee Dashboard for profile and task management, an Admin Dashboard for managing employee details and assignments, and a task tracking system. Utilized local storage for session management and optimized user experience with role-based access control and RESTful API integration.
-      </p>
-      <div className="btnp">
-        <button onClick={() => window.open('https://github.com/BharatRVala/employee-management-system', '_blank')}>
-          <img src={giti} alt="github icon" /> Github
-        </button>
-        <button onClick={() => window.open('https://employee-management-system-smoky-gamma.vercel.app/', '_blank')}>
-          <img src={Demo} alt="Demo icon" /> Demo
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
+      
+      <hr className="border-gray-600 my-4" />
+      
+      {/* Projects Section */}
+      <div className="pro mt-5">
+        <h1 className="text-yellow-500 text-3xl p-4 text-center">My Recent Works</h1>
+        
+        <div className='projects grid grid-cols-1 md:grid-cols-2 gap-6'>
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              title={project.title}
+              description={project.description}
+              githubLink={project.githubLink}
+              demoLink={project.demoLink}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
