@@ -1,6 +1,8 @@
 import React from 'react';
-import giti from '../assets/github.png';
-import Demo from '../assets/Demo.png';
+
+const githubIcon = "/github.png";
+const demoIcon = "/Demo.png";
+
 
 const ProjectCard = ({ title, description, githubLink, demoLink }) => {
   return (
@@ -11,11 +13,11 @@ const ProjectCard = ({ title, description, githubLink, demoLink }) => {
       <div className="flex justify-center gap-4 mt-4">
         <a href={githubLink} target="_blank" rel="noopener noreferrer"
           className="bg-blue-600 px-4 py-2 rounded-lg text-white flex items-center gap-2 hover:bg-blue-500 transition">
-          <img src={giti} alt="GitHub" className="w-5 h-5" /> GitHub
+          <img src={githubIcon} alt="GitHub" className="w-5 h-5" /> GitHub
         </a>
         <a href={demoLink} target="_blank" rel="noopener noreferrer"
           className="bg-blue-600 px-4 py-2 rounded-lg text-white flex items-center gap-2 hover:bg-blue-500 transition">
-          <img src={Demo} alt="Demo" className="w-5 h-5" /> Demo
+          <img src={demoIcon} alt="Demo" className="w-5 h-5" /> Demo
         </a>
       </div>
     </div>
